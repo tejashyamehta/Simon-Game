@@ -1,5 +1,7 @@
+userClickedPattern = [];
+
 var buttonColours = ["red","blue","green","yellow"];
-gamePattern = []
+gamePattern = [];
 
 var sounds = {
  blue:new Audio("sounds/blue.mp3"),
@@ -9,7 +11,13 @@ var sounds = {
  yellow:new Audio("sounds/yellow.mp3")
 }
 
-
+//Check if button was pressed 
+$(".btn").on("click",function(){
+    userChosenColour = this.id;
+    userClickedPattern.push(userChosenColour);
+    playSound(this.id);
+    console.log(userClickedPattern);
+})
 
 function nextSequence(){
     randomNumber = Math.floor(Math.random()*4);
@@ -17,5 +25,10 @@ function nextSequence(){
     gamePattern.push(randomChosenColour);
 
     $("."+randomChosenColour).fadeOut(100).fadeIn(100);
-    sounds[randomChosenColour].play();
+    playSound(randomChosenColour);
+}
+
+function playSound(name){
+    sounds[name].play();
+
 }
