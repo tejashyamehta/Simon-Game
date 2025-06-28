@@ -33,4 +33,8 @@ This is a web-based **Simon Game**, inspired by the classic memory game. This wa
 
 [Live Demo Link](https://tejashyamehta.github.io/Simon-Game)
 
+![image](https://github.com/user-attachments/assets/edc7ce86-c41f-4bb6-832c-e7e4a26e06dd)
+![image](https://github.com/user-attachments/assets/17fe3ae9-1b92-430b-803c-56b329a7fa88)
+![image](https://github.com/user-attachments/assets/06d61628-ee1c-41f6-a4cb-876175b46ed2)
+
 
